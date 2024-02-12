@@ -1,0 +1,19 @@
+.editor__wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: black;
+}
+
+.editor {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  width: 100%;
+  flex-grow: 1;  
+  border-radius: 8px;
+  margin-bottom: 20px;
+/*  outline: none;
+  appearance: none;
+  background: none;
+  resize: none; */
+}
