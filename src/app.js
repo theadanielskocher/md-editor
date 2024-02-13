@@ -5,6 +5,7 @@ import MarkdownProvider from './providers/markdown-provider';
 
 
 const App = () => (
+
   <MarkdownProvider>
     <MainLayout>
       <MainLayout.Column>

@@ -3,7 +3,7 @@
   flex-direction: column;
   height: 100%;
   text-align: justify;
-  font-size: 16px;
+  font-size: 15px;
   color: black;
 }
 
@@ -13,10 +13,12 @@
 }
 
 blockquote {
+  background: #daf7e9;
   color: grey;
   margin: 0;
   padding: 0 1em;
-  border-left: .25em solid #adadad;
+  border-left: .25em solid #4ede96;
+  /*box-shadow: 3px 3px lightgrey;*/
 }
 
 pre {
@@ -24,4 +26,8 @@ pre {
   border-left: 5px solid #55AAFF;
   padding: 5px;
   margin-left: 2px;
+}
+
+hr {
+  color: black;
 }

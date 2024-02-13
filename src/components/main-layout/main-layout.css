@@ -8,6 +8,6 @@
   padding: 1.875rem;
 }
 
-.mainLayout__col:not(:last-child) {
-  border-right: 3px solid var(--dark);
-}
+/*.mainLayout__col:not(:last-child) {
+ border-right: 3px solid #000000;
+  box-shadow: 1px 1px lightgrey; }*/
