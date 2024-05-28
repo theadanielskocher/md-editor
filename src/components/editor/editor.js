@@ -5,35 +5,45 @@ import './editor.css';
 
 const Editor = () => {
   const [markdown, setMarkdown] = useMarkdown();
-  const [words, setWords] =  useState(0);
-  const [chars, setChars] =  useState(0);
+  // const [words, setWords] =  useState(0);
+  // const [chars, setChars] =  useState(0);
 
-  const getWordsCount = (str) => {
-    return str.match(/(\w+)/g).length;
-  };
+  // const getWordsCount = (str) => {
+  //   return str.match(/(\w+)/g).length;
+  // };
 
-  const getCharsCount = (str) => {
-    return str.length;
-  };
+  // const getCharsCount = (str) => {
+  //   return str.length;
+  // };
 
   const updateMarkdown = (event) => {
     const value = event.target.value;
 
     setMarkdown(value);
-    setWords(getWordsCount(value));
-    setChars(getCharsCount(value));
+    // setWords(getWordsCount(value));
+    // setChars(getCharsCount(value));
   };
+
+  const downloadFile = () => {
+    const link = document.createElement('a');
+    const file = new Blob([markdown], { type: 'text/plain' });
+    link.href = URL.createObjectURL(file);
+    link.download = 'markdown.md';
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+
 
   return (
     <div className="editor__wrap">
-      <TitleBar title="Markdown Editor" aside={`${words} Words ${chars} Characters`} />
+      <TitleBar title="Markdown Editor" aside={``/*`${words} Words ${chars} Characters`*/} />
       <textarea
         className="editor"
         value={markdown}
         onChange={updateMarkdown}
       />
+      <button onClick={downloadFile}>Tải xuống</button>
     </div>
-
   );
 }
 

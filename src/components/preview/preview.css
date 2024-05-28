@@ -5,29 +5,129 @@
   text-align: justify;
   font-size: 15px;
   color: black;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .preview__scroll {
   overflow: auto;
   flex-grow: 1;
+/*  padding: 10px;*/
 }
 
 blockquote {
-  background: #daf7e9;
   color: grey;
   margin: 0;
   padding: 0 1em;
-  border-left: .25em solid #4ede96;
+  border-left: .25em solid grey;
   /*box-shadow: 3px 3px lightgrey;*/
 }
 
 pre {
-  background: #E0F0FF;
-  border-left: 5px solid #55AAFF;
+  background: #FAEAB1;
+  opacity: 70%;
   padding: 5px;
   margin-left: 2px;
+  border-radius: 5px;
+}
+
+code {
+  background-color: #FAEAB1;
+  padding: 3px;
+  border-radius: 5px;
 }
 
 hr {
-  color: black;
+  border: 1px solid lightgrey;
+}
+/*TABLE*/
+
+:root {
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #d4d4d4;
+  --color-border-default: black;
+  --color-border-muted: hsla(210, 18%, 87%, 1);
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+ /* margin-top: 0; * /
+ /* margin-bottom: 16px;*/
+ /* width: 100%;*/
+/*  max-width: 100%;*/
+ /* overflow: auto;*/
+}
+
+tr {
+  background-color: var(--color-canvas-default);
+  border-top: 1px solid var(--color-border-muted); 
+}
+
+/*tr:nth-child(2n) {
+  background-color: var(--color-canvas-subtle);
+}*/
+
+tr:hover {
+  background-color: lightgrey; 
+  transition: background-color 125ms;
+}
+
+td,
+th {
+  border: 1px solid #eee;
+  padding: 6px 13px;
+  
+}
+
+th {
+  font-weight: 800;
+  background-color: #9AD0C2;
+  padding:.9375em 1.25em;
+}
+
+table img {
+  background-color: transparent;
+}
+
+/*END OF TABLE */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.58;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 1.62;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 13px;
+  line-height: 1.77;
+  font-weight: 400;
 }

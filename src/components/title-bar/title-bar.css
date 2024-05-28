@@ -1,11 +1,25 @@
 .titleBar__wrap {
-  display: flex;
-  justify-content: space-between;
+/*  display: flex; */
+ /* justify-content: space-between;*/
   align-items: center;
+  text-align: center;
   width: 100%;
-  height: 50px;
+  height: 60px;
   padding: 10px;
-  border: 1px solid black;
- /* box-shadow: 3px 3px lightgrey;*/
-  background-color: white;
+  /* border: 1px solid black; */
+  background-color: #9AD0C2;
+  font-size: 20px;
+  box-shadow: 3px 3px lightgrey;
+  border-radius: 5px;
+}
+
+titleh {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #265073;
+}
+
+titleh:hover {
+  color: white;
+  transition: color 250ms;
 }

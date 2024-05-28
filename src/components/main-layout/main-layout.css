@@ -5,7 +5,7 @@
 
 .mainLayout__col {
   flex: 2;
-  padding: 1.875rem;
+  padding: 1rem;
 }
 
 /*.mainLayout__col:not(:last-child) {

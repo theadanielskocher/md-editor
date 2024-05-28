@@ -6,12 +6,15 @@
 }
 
 .editor {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
+  font-family: 'Consolas', monospace;
+  font-size: 14px;
   width: 100%;
   flex-grow: 1;  
-  border-radius: 8px;
+   border-radius: 8px; 
   margin-bottom: 20px;
+  padding: 8px;
+  box-shadow: 3px 3px lightgrey;
+  line-height: 1.5;
 /*  outline: none;
   appearance: none;
   background: none;

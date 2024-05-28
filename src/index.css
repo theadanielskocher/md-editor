@@ -14,10 +14,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
   color: black;
-  background-color: #f0f0f0;
+  background-color: #F1FADA;
 }
 
 *, *:before, *:after {
@@ -26,43 +26,46 @@ body {
 
 /* Typography */
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   margin: 0px;
+
 }
 
 h1 {
   font-size: 2.5em;
   line-height: 1.55;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 2em;
   line-height: 1.58;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 1.5em;
   line-height: 1.62;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 h4 {
   font-size: 1.25em;
   line-height: 1.65;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 h5 {
   font-size: 1em;
   line-height: 1.65;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h6 {
   font-size: 0.75em;
   line-height: 1.77;
-  font-weight: 700;
-}
+  font-weight: 400;
+} */
 
 /* Anchors */
 a {
@@ -70,7 +73,7 @@ a {
 }
 
 /* Buttons */
-/* button {
+ button {
   --button-bg: white;
   --border-bg: white;
   --text-color: black;
@@ -80,13 +83,19 @@ a {
   outline: none;
   background-color: var(--button-bg);
   color: var(--text-color);
-  border: 2px solid var(--border-bg);
+  /* border: 1px solid black; */
   transition: .2s opacity;
   padding: 0.5em 1.5em;
   cursor: pointer;
   border-radius: 0.8125rem;
   font-weight: 700;
-} */
+  box-shadow: 2px 2px lightgrey;
+}
+
+button:hover {
+  background-color: #2D9596;
+  transition: background-color 125ms;
+}
 
 /* button:hover {
   opacity: 0.9;
