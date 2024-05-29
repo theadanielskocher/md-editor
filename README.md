@@ -19,6 +19,6 @@ At this point, your website will run at `localhost:3000`.
 ## Features
 - Quickly convert Markdown syntax (in `editor` section) into beautiful lines of text (in `preview` section).
 - Write math equations easily and beautifully with [MathJax](https://www.mathjax.org/)
-- Refer [this](https://www.markdownguide.org/basic-syntax/) to Markdown syntax and how to write them.
+- Refer [this](https://www.markdownguide.org/basic-syntax/) to see the Markdown syntax and how to write them.
 
 ### I would like to thank [Nikelaz](https://github.com/nikelaz/react-markdown-editor) for allowing me to use your project for mine.
