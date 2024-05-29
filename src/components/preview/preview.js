@@ -1,13 +1,13 @@
 import TitleBar from '../title-bar/title-bar';
-import ReactMarkdown from 'C:/Users/Hai Dang/node_modules/react-markdown';
+import ReactMarkdown from 'react-markdown';
 import { useMarkdown } from '../../providers/markdown-provider';
 import './preview.css';
-import remarkGfm from 'C:/Users/Hai Dang/node_modules/remark-gfm';
-import rehypeKatex from 'C:/Users/Hai Dang/node_modules/rehype-katex';
-import remarkMath from 'C:/Users/Hai Dang/node_modules/remark-math';
+import remarkGfm from 'remark-gfm';
+import rehypeKatex from 'rehype-katex';
+import remarkMath from 'remark-math';
 import 'katex/dist/katex.min.css';
-import remarkBreaks from 'C:/Users/Hai Dang/node_modules/remark-breaks';
-import emoji from 'C:/Users/Hai Dang/node_modules/remark-emoji';
+import remarkBreaks from 'remark-breaks';
+import emoji from 'remark-emoji';
 
 
 const Preview = () => {
